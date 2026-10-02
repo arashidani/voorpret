@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "my-liff",
+  "name": "voorpret",
   "main": "src/worker/index.ts",
   "compatibility_date": "2026-10-01",
   "assets": {
@@ -10,8 +10,8 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "my-liff-db",
-      // `npx wrangler d1 create my-liff-db` で発行されたIDに置き換える
+      "database_name": "voorpret-db",
+      // `npx wrangler d1 create voorpret-db` で発行されたIDに置き換える
       "database_id": "00000000-0000-0000-0000-000000000000",
       "migrations_dir": "migrations"
     }

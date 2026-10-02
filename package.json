@@ -1,5 +1,5 @@
 {
-  "name": "my-liff",
+  "name": "voorpret",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,8 +11,8 @@
     "deploy": "npm run build && wrangler deploy",
     "cf-typegen": "wrangler types",
     "db:generate": "drizzle-kit generate",
-    "db:migrate:local": "wrangler d1 migrations apply my-liff-db --local",
-    "db:migrate:remote": "wrangler d1 migrations apply my-liff-db --remote"
+    "db:migrate:local": "wrangler d1 migrations apply voorpret-db --local",
+    "db:migrate:remote": "wrangler d1 migrations apply voorpret-db --remote"
   },
   "dependencies": {
     "@line/liff": "^2.31.1",

@@ -35,7 +35,7 @@ function App() {
 
   return (
     <main>
-      <h1>my-liff</h1>
+      <h1>voorpret</h1>
       {state.status === "loading" && <p>LIFFを初期化しています…</p>}
       {state.status === "redirecting" && <p>LINEログインへ移動しています…</p>}
       {state.status === "error" && <p className="error">{state.message}</p>}

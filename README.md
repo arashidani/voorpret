@@ -85,7 +85,7 @@ npm run dev                     # http://localhost:5173
 
 ## 本番に出すまで
 
-1. `npx wrangler d1 create my-liff-db` を実行し、出力された `database_id` を `wrangler.jsonc` に書く（今は仮の値が入っている）
+1. `npx wrangler d1 create voorpret-db` を実行し、出力された `database_id` を `wrangler.jsonc` に書く（今は仮の値が入っている）
 2. `npx wrangler secret put LINE_CHANNEL_ID` でチャネルIDを登録する。`SKIP_LINE_VERIFY` は本番に設定しない
 3. `npm run db:migrate:remote` で本番DBにテーブルを作る
 4. `npm run deploy` でデプロイする
