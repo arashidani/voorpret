@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=26"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -24,7 +27,7 @@
   "devDependencies": {
     "@cloudflare/vite-plugin": "^1.62.4",
     "@line/liff-mock": "^1.0.4",
-    "@types/node": "^24.13.3",
+    "@types/node": "^26.6.4",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.1.1",
