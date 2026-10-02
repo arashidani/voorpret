@@ -40,7 +40,7 @@ LINEのユーザーIDを、フロントから受け取ってそのまま信用�
 
 Node.js 26 以上が必要（`.nvmrc` に書いてある。nvm なら `nvm use` で切り替わる）。
 
-Node 26 に付いてくる npm 11 は、依存パッケージのインストールスクリプトを既定で止めるので、`npm install` のたびに esbuild と workerd について警告が出る。どちらも中身はバイナリの確認だけで、止めたままでもビルドと `npm run dev` は動く。
+Node 26 に付いてくる npm 11 は、依存パッケージのインストールスクリプトを既定で止める。esbuild と workerd はネイティブバイナリの確認とダウンロードをインストールスクリプトでするので、`package.json` の `allowScripts` で許可してある。インストールスクリプトを持つ依存を新しく足すと、`npm install` で警告が出る。中身を確かめてから `npm install-scripts approve <パッケージ名>` で許可する。
 
 ```bash
 npm install
